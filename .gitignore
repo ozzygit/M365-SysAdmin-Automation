@@ -1,55 +1,38 @@
-# Prerequisites
-*.d
+# Ignore everything by default
+*
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+# Keep directories so we can re-include files inside them
+!*/
 
-# Linker output
-*.ilk
-*.map
-*.exp
+# Keep repository metadata and documentation
+!README.md
+!LICENSE
+!.gitattributes
+!.gitignore
+!AGENTS.md
+!*.md
 
-# Precompiled Headers
-*.gch
-*.pch
+# Allow PowerShell and Python automation scripts
+!*.ps1
+!*.psm1
+!*.psd1
+!*.ps1xml
+!*.py
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+# Allow project folders used for automation work
+!/scripts/
+!/scripts/**
+!/test/
+!/test/**
+!/modules/
+!/modules/**
+!/tools/
+!/tools/**
+!/configs/
+!/configs/**
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
-
-# debug information files
-*.dwo
+# Keep editor / AI tooling configuration
+!/.devin/
+!/.devin/**
+!/.windsurf/
+!/.windsurf/settings.json
